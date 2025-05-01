@@ -1,0 +1,42 @@
+---
+import "../styles/global.scss";
+import "../styles/sidebar.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="images/lotusfavicon.png"/>
+    <link href="https://fonts.cdnfonts.com/css/apercu-pro" rel="stylesheet">
+    <title>Ethos</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="sidebar-container">
+      <span class="name">
+        <a class="name-link"> Ethos</a>
+      </span>
+      <div style={{ maxWidth: "550px" }}>
+        Welcome to the home of my thoughts. Everywhere else I prefer to let my creative voice take precedence over my opinion, 
+        but here you can find the ways I see the world, pursue craft, and approach life.
+        <br><br>
+        I have no interest in defining what makes a good designer or dishing advice on how to achieve maximum hustle. 
+        I don’t care if I’m a generalist or a specialist or if designers should learn to code or if engineers should learn to design. 
+        <br><br>
+        Everyone has different ideals, goals, ambitions for their craft and I respect them all. Who am I to judge what somebody else cares about? 
+        <br><br>
+        Me: I care about living with joy- stare at the sky, rot in bed, blast good music, laugh with friends, eat good food, 
+        fall in love, laugh at yourself, listen to people you don’t agree with, learn to grow and create the things that you want to.
+        <br><br>
+        Don’t fear wasting time, fear not enjoying your time. Achievement is wonderful, but in chasing it ask yourself are you happy?
+        <br><br>
+        Believe that life is good, people are beautiful and it (they) will be.
+      </div>
+      <div style={{ paddingBottom: "55px" }}>
+        <a href="/">← Home</a>
+      </div>
+    </div>
+  </body>
+</html>

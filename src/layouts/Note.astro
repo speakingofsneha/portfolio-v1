@@ -1,0 +1,27 @@
+---
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/article.scss";
+import "../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="images/lotusfavicon.png"/>
+    <meta name="description" content={frontmatter.description} />
+    <title>{frontmatter.title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <div id="sidebar"></div>
+      <div class="note-container">
+        <slot/>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+---
+import Sidebar from "../layouts/Sidebar.astro";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/about.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="images/lotusfavicon.png"/>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.cdnfonts.com/css/apercu-pro" rel="stylesheet">
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Sneha's portfolio" />
+    <title>About</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <div id="sidebar">
+        <Sidebar />
+      </div>
+      <div class="about-page-wrapper">
+        <div class="about-page-container">
+          <a class="about-back" href="/">←</a>
+          <div class="about-hey">
+            <span> Hello! I'm Sneha (snay-ha)</span>
+          </div>
+          <img class="about-image" src="images/aboutme.png" />
+          <div class="about" style={{ marginBottom: "55px" }}>
+            <span>
+              I'm a penultimate year Interaction Design & Psychological Science student based in Sydney (but madras has my 🤍). <br><br>
+              The best part about being 20 is undergoing a character metamorphosis every month. 
+              The worst part however, is how hard it is to write a bio because I’m constantly changing, 
+              but I think I know who I am... an artist, designer, writer, developer and a very cool 
+              person trust me on this!!! I’ve worn many hats but to me, the label isn’t what matters. <br><br>
+              Pixels, “words”, &lt;code&gt; and their interactions are mediums through which we stumble across
+              new perspectives, Essentially, if I had to explain myself and the work I do to a 10, 30 and 70 year old collectively, 
+              I draw from life and try to make things that change our stories for the better 🫂
+            </span>
+          </div>
+        </div>
+        <div class="back-button">
+          <span class="back-button">
+            <a class="gray-link" href="/">Home</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  document.getElementById("article-body")!.style.backgroundColor = mobile
+    ? "#3F3F3F"
+    : "";
+</script>
