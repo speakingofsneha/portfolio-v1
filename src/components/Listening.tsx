@@ -11,7 +11,7 @@ function getCurrentDateTimeCaption() {
 const TRACK = {
   title: "Flowers R. Blooming",
   artist: "Peter Cat Recording Co.",
-  image: "images/petercat.jpg", // album cover 
+  image: "/sneha.work.github.io/images/petercat.jpg", // album cover 
   link: "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP?si=502f6db6674e489f", // spotify link
 };
 
