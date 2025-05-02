@@ -10,6 +10,7 @@
 ## Functionality / Code
 - [x] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
+- [ ] Fix images for deployment
 
 ## Design / Frontend
 - [ ] Glass + label card effect
