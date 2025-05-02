@@ -18,7 +18,7 @@ const TRACK = {
 const ListeningTo = () => {
   return (
     <div>
-      <span className="currently-header">Currently listening to:</span>
+      <span className="currently-header">Listening to:</span>
       <div id="currently-container">
         <a
           id="track-link"
