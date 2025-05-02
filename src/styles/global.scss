@@ -59,7 +59,7 @@ select {
 }
 
 .name-link {
-  font-size: 15.5px;
+  font-size: 15px;
   text-decoration: none;
   color: #3F3F3F;
 
@@ -69,6 +69,7 @@ select {
 
   &:hover {
     text-decoration: none;
+    color: base.$purple-hover;
   }
 }
 
@@ -87,6 +88,7 @@ select {
 }
 
 .gray-link {
+  font-size: 15px;
   color: base.$gray-content;
   text-decoration: none;
 
@@ -96,5 +98,6 @@ select {
 
   &:hover {
     text-decoration: none;
+    color: base.$purple-hover;
   }
 }
