@@ -6,52 +6,52 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
-    url: "./images/work/datavis.png",
+    url: "/sneha.work.github.io/images/work/datavis.png",
     id: "data vis",
     category: "code design"
   },
   {
-    url: "./images/work/olympal.png",
+    url: "/sneha.work.github.io/images/work/olympal.png",
     id: "olympal",
     category: "kdesign",
   },
   {
-    url: "./images/work/anu.png",
+    url: "/sneha.work.github.io/images/work/anu.png",
     id: "anu",
     category: "code design",
   },
   {
-    url: "./images/work/litbox.png",
+    url: "/sneha.work.github.io/images/work/litbox.png",
     id: "lit-box",
     category: "research design",
   },
   {
-    url: "./images/work/sapasa.png",
+    url: "/sneha.work.github.io/images/work/sapasa.png",
     id: "sapasa",
     category: "design",
   },
   {
-    url: "./images/work/qualres.png",
+    url: "/sneha.work.github.io/images/work/qualres.png",
     id: "qual res",
     category: "research",
   },
   {
-    url: "./images/work/kolam.png",
+    url: "/sneha.work.github.io/images/work/kolam.png",
     id: "kolam",
     category: "research",
   },
   {
-    url: "./images/work/zine.png",
+    url: "/sneha.work.github.io/images/work/zine.png",
     id: "zine",
     category: "research design",
   },
   {
-    url: "./images/work/mahabs.png",
+    url: "/sneha.work.github.io/images/work/mahabs.png",
     id: "mahabs",
     category: "code design",
   },
   {
-    url: "./images/work/misc.png",
+    url: "/sneha.work.github.io/images/work/misc.png",
     id: "misc.",
     category: "design research",
   },
