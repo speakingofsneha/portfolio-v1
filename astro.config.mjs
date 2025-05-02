@@ -5,5 +5,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://sneha.work.github.io/my-project/', 
-  base: '/my-project/', 
 });
