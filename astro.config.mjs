@@ -5,6 +5,5 @@ import react from "@astrojs/react";
 // https://chatgpt.com/share/68145399-11c8-800f-be1d-6039fd868147
 export default defineConfig({
   integrations: [react()],
-  site: 'https://speakingofsneha.github.io/sneha.work.github.io/', 
-  base: '/sneha.work.github.io/',
+  site: 'https://sneha.design', 
 });

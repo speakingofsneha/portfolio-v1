@@ -11,14 +11,14 @@ function getCurrentDateTimeCaption() {
 const TRACK = {
   title: "Flowers R. Blooming",
   artist: "Peter Cat Recording Co.",
-  image: "/sneha.work.github.io/images/petercat.jpg", // album cover 
+  image: " images/petercat.jpg", // album cover 
   link: "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP?si=502f6db6674e489f", // spotify link
 };
 
 const ListeningTo = () => {
   return (
     <div>
-      <span className="currently-header">Currently listening to:</span>
+      <span className="currently-header">Listening to:</span>
       <div id="currently-container">
         <a
           id="track-link"
