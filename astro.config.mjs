@@ -6,5 +6,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://speakingofsneha.github.io/', // your deployed URL 
-  base: '/sneha.work.github.io/', // your GitHub repo name with slashes
 });
