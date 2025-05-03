@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/currently.scss";
 
 function getCurrentDateTimeCaption() {
@@ -10,19 +11,24 @@ function getCurrentDateTimeCaption() {
 
 const TRACK = {
   image: "/images/petercat.jpg",
-  link: "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP?si=502f6db6674e489f",
+  // Updated link
+  link: "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP?nd=1&dlsi=f6ad4a712ec04f6f",
 };
 
 const ListeningTo = () => {
+  const handleClick = () => {
+    window.open(TRACK.link, "_blank");
+  };
+
   return (
     <div>
-      <span className="currently-header">Currently listening to:</span>
-      <div id="album">
-        <div id="cover"> </div>
-        <div id="vinyl"> </div>
+      <span className="currently-header">currently listening to</span>
+      <div id="album" onClick={handleClick} role="link" tabIndex={0}>
+        <div id="cover"></div>
+        <div id="vinyl"></div>
       </div>
       <div id="currently-info">
-        <a id="track-link" href={TRACK.link} target="_blank" rel="noopener noreferrer"> </a>
+        {/* Optional: you can still keep this text info with timestamp */}
         {/* <span>Flowers R. Blooming</span>
         <span>by Peter Cat Recording Co.</span>
         <span id="track-listening" style={{ opacity: 0.4 }}>

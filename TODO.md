@@ -20,9 +20,7 @@
 - [ ] Check if 15.5 is readable 
 - [x] Retire Inter
 - [ ] Improve mobile-view  
-- [ ] Make book png like book 
-    https://scastiel.dev/animated-3d-book-css 
-    https://codepen.io/jeongmin-kim-the-flexboxer/pen/VwVqxRO 
+- [x] Make book png like book 
 - [x] Make song rotating vinyl (and maybe play-able?)
 - [ ] Remove scrollbar
 

@@ -1,21 +1,9 @@
 ---
+import ClickableBook from "../components/ClickableBook";
 import "../styles/currently.scss";
 ---
 
 <div>
-  <span class="currently-header"> & reading:</span>
-  <div id="currently-container">
-    <a href="https://www.goodreads.com/book/show/25899336-when-breath-becomes-air" target="_blank">
-      <img 
-        id="currently-image" 
-        src=" /images/book.jpg"
-        class="sidebar_asset"
-      />
-    </a>
-    <div id="currently-info">
-      <span>When Breath Becomes Air</span>
-      <span>by Paul Kalanithi</span>
-      <span style={ "opacity: 0.4;" }>May 2025</span>
-    </div>
-  </div>
+  <span class="currently-header"> and reading</span>
+  <ClickableBook client:load />
 </div>
