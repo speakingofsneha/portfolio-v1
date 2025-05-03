@@ -1,7 +1,6 @@
 @use 'base';
 
 div {
-  font-family: "Apercu", monospace, Arial, Helvetica, sans-serif;;
   font-weight: 200;
   font-size: 16px;
   color: #4B4A4A;
@@ -11,7 +10,6 @@ a {
   text-decoration: none;
   color: #4B4A4A;
   font-size: 16px;
-  font-family: "Apercu";
   
   &:visited {
     color: #4B4A4A;

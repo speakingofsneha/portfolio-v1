@@ -4,3 +4,10 @@ $gray-content: #B2B2B2;
 $orange-bg: #FFE5B2;
 $orange-text: #D86800;
 $purple-hover: #98A6D1;
+
+/* font */
+@import url("https://db.onlinewebfonts.com/c/cc63ce6e304da54106961b31a1d744a9?family=Apercu");
+body {
+    font-family: "Apercu"; 
+}
+

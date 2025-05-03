@@ -59,16 +59,10 @@ select {
 }
 
 .name-link {
-  font-size: 15px;
-  text-decoration: none;
+  font-size: 18px;
   color: #4B4A4A;
 
-  &:visited {
-    color: #4B4A4A;
-  }
-
   &:hover {
-    text-decoration: none;
     color: base.$purple-hover;
   }
 }
