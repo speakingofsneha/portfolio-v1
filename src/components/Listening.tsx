@@ -16,18 +16,18 @@ const TRACK = {
 const ListeningTo = () => {
   return (
     <div>
-      <span className="currently-header">currently listening to:</span>
+      <span className="currently-header">Currently listening to:</span>
       <div id="album">
         <div id="cover"> </div>
         <div id="vinyl"> </div>
       </div>
       <div id="currently-info">
         <a id="track-link" href={TRACK.link} target="_blank" rel="noopener noreferrer"> </a>
-        <span>Flowers R. Blooming</span>
+        {/* <span>Flowers R. Blooming</span>
         <span>by Peter Cat Recording Co.</span>
         <span id="track-listening" style={{ opacity: 0.4 }}>
           {getCurrentDateTimeCaption()}
-        </span>
+        </span> */}
       </div>
     </div>
   );

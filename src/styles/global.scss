@@ -61,10 +61,10 @@ select {
 .name-link {
   font-size: 15px;
   text-decoration: none;
-  color: #3F3F3F;
+  color: #4B4A4A;
 
   &:visited {
-    color: #3F3F3F;
+    color: #4B4A4A;
   }
 
   &:hover {
@@ -95,6 +95,19 @@ select {
   &:visited {
     color: base.$gray-content;
   }
+
+  &:hover {
+    text-decoration: none;
+    color: base.$purple-hover;
+  }
+}
+
+.back-button {
+  display: block;
+  font-size: 15px;
+  color: #4B4A4A;
+  font-family: "Apercu";
+  text-decoration: none;
 
   &:hover {
     text-decoration: none;

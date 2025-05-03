@@ -4,17 +4,17 @@ div {
   font-family: "Apercu", monospace, Arial, Helvetica, sans-serif;;
   font-weight: 200;
   font-size: 16px;
-  color: #3F3F3F;
+  color: #4B4A4A;
 }
 
 a {
   text-decoration: none;
-  color: #3F3F3F;
+  color: #4B4A4A;
   font-size: 16px;
   font-family: "Apercu";
   
   &:visited {
-    color: #3F3F3F;
+    color: #4B4A4A;
   }
 
   &:hover {
@@ -40,9 +40,9 @@ a {
 }
 
 .about-blurb {
-  width: 72%;
+  width: 75%;
   font-size: 16px;
-  color: #3F3F3F;
+  color: #4B4A4A;
 }
 
 .list {
@@ -90,3 +90,4 @@ a {
     padding: 15px;
   }
 }
+

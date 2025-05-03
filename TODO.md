@@ -21,7 +21,10 @@
 - [x] Retire Inter
 - [ ] Improve mobile-view  
 - [ ] Make book png like book 
-- [ ] Make song rotating vinyl (and maybe play-able?)
+    https://scastiel.dev/animated-3d-book-css 
+    https://codepen.io/jeongmin-kim-the-flexboxer/pen/VwVqxRO 
+- [x] Make song rotating vinyl (and maybe play-able?)
+- [ ] Remove scrollbar
 
 ## Bugs / Improvements
 - [x] Fix work redirection; clicking leads to new link in the same tab 
