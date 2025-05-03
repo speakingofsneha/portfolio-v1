@@ -42,7 +42,7 @@ export const works: WorkListItem[] = [
     blurb: "ux design",
     year: "2023–",
     category: "research design",
-    url: "https://drive.google.com/file/d/1h9SLMsDGd1I8XgzrzeMT5W3Ye8JGnPDq/view?usp=sharing",
+    url: "none",
     wip: true,
   },
   {

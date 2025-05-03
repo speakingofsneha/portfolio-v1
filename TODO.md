@@ -3,21 +3,19 @@
 - [x] About
 - [x] Ethos
 - [ ] Case studies!! 
-- [ ] Add misc art 
 - [ ] Link to old writing
-- [ ] Add website logs 
+- [ ] Website logs 
 
 ## Functionality / Code
 - [x] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
 - [x] Fix images for deployment
-- [ ] Custom domain
+- [x] Custom domain
 
 ## Design / Frontend
 - [ ] Glass + label card effect
 - [x] Favicon 
-- [ ] Hover purple 
-- [ ] Check if 15.5 is readable 
+- [x] Hover purple 
 - [x] Retire Inter
 - [ ] Improve mobile-view  
 - [x] Make book png like book 
