@@ -1,0 +1,57 @@
+@use 'base';
+
+html {
+    scroll-behavior: smooth;
+  
+    &.centered {
+      margin: auto;
+      padding: 3vw;
+      max-width: 750px;
+    }
+  }
+  
+  body.copy {
+    color: base.$dark-text;
+    font-family: "Apercu", sans-serif;
+    line-height: 1.6;
+  }
+  
+  .header {
+    color: var(--header-color);
+    font-family: "Apercu Pro Regular", sans-serif;
+    font-size: 17px;
+  }
+  
+  // Body paragraph styling
+  p,
+  li {
+    font-family: "Apercu Pro Regular", sans-serif;
+    color: base.$dark-text;
+    font-size: 16px;
+  }
+
+  p.heading {
+    font-family: Apercu Pro Medium;
+    margin-bottom: -0.7em;
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  img {
+    max-width: 900px;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .notes-back {
+    position: fixed;
+    left: 20em;
+    color: base.$gray-content;
+    text-decoration: none;
+    font-family: 'Apercu Pro Regular', sans-serif;
+  
+    &:hover {
+      color: rgb(152, 166, 209);
+    }
+  }

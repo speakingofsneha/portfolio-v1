@@ -89,7 +89,7 @@ const WorkList = () => {
       <div className="works-list">
         {works.map((work) => {
           return (
-            <a key={work.title} className="work-link" href={work.url} target="_blank" rel="noopener noreferrer">
+            <a key={work.title} className="work-link" href={work.url} rel="noopener noreferrer">
               <div
                 id={work.title}
                 className={`work-item`}

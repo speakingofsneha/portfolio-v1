@@ -1,0 +1,36 @@
+---
+import "../../styles/global.scss";
+import "../../styles/about.scss";
+import "../../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!DOCTYPE html>
+<html class="centered" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Olympal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="copy" id="article">
+    <div class="container">
+        <a href="../../" class="notes-back">← back</a>
+        <div class="header" style="text-align: center">
+            Designing for shared sporting experiences in AR
+            <br>
+        </div>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0;">
+        <p class="heading">
+            Background
+         </p>
+        <p>
+            Traditional broadcasts of the Olympics no longer meet the evolving expectations of an audience that values control, connection, and immersive participation.  
+            To address this, we designed an augmented reality viewing experience that adapts to a user’s unique preferences to replicate the real time atmosphere, energy and shared experiences they create when watching the games in person. 
+        </p>
+        <img src="/images/work/olympal.png"/>
+    </div>
+</body>
+</html>

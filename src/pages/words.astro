@@ -1,38 +1,43 @@
 ---
 import "../styles/global.scss";
-import "../styles/sidebar.scss";
+import "../styles/notes.scss";
 import { ViewTransitions } from 'astro:transitions';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
-    <title>Ethos</title>
+<!DOCTYPE html>
+<html class="centered" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> hello, world!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <ViewTransitions />
-  </head>
-  <body>
-    <div class="sidebar-container">
-      <a class="back-button" href="../">← back</a>
-      <div style={{ maxWidth: "550px" }}>
-        Welcome to the home of my thoughts. Everywhere else I prefer to let my creative voice take precedence over my opinion, 
-        but here you can find the ways I see the world, pursue craft, and approach life.
-        <br><br>
-        I have no interest in defining what makes a good designer or dishing advice on how to achieve maximum hustle. 
-        I don’t care if I’m a generalist or a specialist or if designers should learn to code or if engineers should learn to design. 
-        <br><br>
-        Everyone has different ideals, goals, ambitions for their craft and I respect them all. Who am I to judge what somebody else cares about? 
-        <br><br>
-        Me: I care about living with joy- stare at the sky, rot in bed, blast good music, laugh with friends, eat good food, 
-        fall in love, laugh at yourself, listen to people you don’t agree with, learn to grow and create the things that you want to.
-        <br><br>
-        Don’t fear wasting time, fear not enjoying your time. Achievement is wonderful, but in chasing it ask yourself are you happy?
-        <br><br>
-        Believe that life is good, people are beautiful and it (they) will be.
-      </div>
-      <div style={{ paddingBottom: "55px" }}>
-      </div>
+</head>
+
+<body class="copy" id="article">
+    <a href="../" class="notes-back">← back</a>
+    <div class="container">
+        <div class="header" style="text-align: center">
+            hello, world!
+            <br>
+        </div>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0;">
+        <p>
+          Welcome to the home of my thoughts. Everywhere else I prefer to let my creative voice take precedence over my opinion, 
+          but here you can find the ways I see the world, pursue craft, and approach life.
+          <br><br>
+          I have no interest in defining what makes a good designer or dishing advice on how to achieve maximum hustle. 
+          I don’t care if I’m a generalist or a specialist or if designers should learn to code or if engineers should learn to design. 
+          <br><br>
+          Everyone has different ideals, goals, ambitions for their craft and I respect them all. Who am I to judge what somebody else cares about? 
+          <br><br>
+          Me: I care about living with joy- stare at the sky, rot in bed, blast good music, laugh with friends, eat good food, 
+          fall in love, laugh at yourself, listen to people you don’t agree with, learn to grow and create the things that you want to.
+          <br><br>
+          Don’t fear wasting time, fear not enjoying your time. Achievement is wonderful, but in chasing it ask yourself are you happy?
+          <br><br>
+          Believe that life is good, people are beautiful and it (they) will be.
+        </p>
     </div>
-  </body>
+</body>
 </html>

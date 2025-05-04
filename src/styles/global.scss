@@ -53,7 +53,7 @@ select {
 }
 
 .name {
-  font-family: "Apercu", monospace, Arial, Helvetica, sans-serif;;
+  font-family: "Apercu Pro Regular";
   display: flex;
   justify-content: space-between;
 }
@@ -82,7 +82,7 @@ select {
 }
 
 .gray-link {
-  font-size: 15px;
+  font-size: 16px;
   color: base.$gray-content;
   text-decoration: none;
 
@@ -98,9 +98,9 @@ select {
 
 .back-button {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   color: #4B4A4A;
-  font-family: "Apercu";
+  font-family: "Apercu Pro Regular";
   text-decoration: none;
 
   &:hover {
