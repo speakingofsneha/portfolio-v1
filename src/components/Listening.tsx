@@ -22,7 +22,7 @@ const ListeningTo = () => {
 
   return (
     <div>
-      <span className="currently-header">currently listening to</span>
+      <span className="currently-header">listening to</span>
       <div id="album" onClick={handleClick} role="link" tabIndex={0}>
         <div id="cover"></div>
         <div id="vinyl"></div>

@@ -26,9 +26,9 @@ a {
   height: 100dvh;
   gap: 55px;
   padding: 25px;
-  overflow-y: hidden;
-  //overflow-y: scroll;
-  //scroll-behavior: smooth;
+  //overflow-y: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   background-color: white;
 }
 
@@ -39,7 +39,7 @@ a {
 }
 
 .about-blurb {
-  width: 75%;
+  width: 55%;
   font-size: 16.5px;
   color: #4B4A4A;
 }
@@ -51,7 +51,8 @@ a {
 }
 
 .footer {
-  opacity: 80%;
+  margin-top: 5em;
+  opacity: 100%;
 }
 
 
