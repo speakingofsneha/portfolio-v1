@@ -31,11 +31,6 @@ const workImages: WorkImageData[] = [
     category: "design",
   },
   {
-    url: "/images/work/qualres.png",
-    id: "qual res",
-    category: "research",
-  },
-  {
     url: "/images/work/kolam.png",
     id: "kolam",
     category: "research",
