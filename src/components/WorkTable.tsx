@@ -131,4 +131,5 @@ const generateRandomAngles = (numImages: number) => {
   return angles;
 };
 
+
 export default WorkTable;

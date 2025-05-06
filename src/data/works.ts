@@ -6,6 +6,7 @@ interface WorkListItem {
   category: string;
   url: string;
   wip: boolean;
+  external?: boolean; // optional
 }
 
 export const works: WorkListItem[] = [
@@ -26,6 +27,7 @@ export const works: WorkListItem[] = [
     category: "research design",
     url: "https://www.behance.net/gallery/223473325/Olympal-Shared-sporting-experience-in-AR",
     wip: false,
+    external: true,
   },
   {
     title: "anu",
@@ -53,6 +55,7 @@ export const works: WorkListItem[] = [
     category: "code",
     url: "https://www.behance.net/gallery/223935267/Mornings-in-Chidam-Creative-Coding-in-p5js",
     wip: false,
+    external: true,
   },
   {
     title: "sapasa",
@@ -60,17 +63,9 @@ export const works: WorkListItem[] = [
     blurb: "interface desn",
     year: "2023",
     category: "research design",
-    url: "none",
+    url: "https://www.figma.com/proto/yfEMxnncnoibR83KhucQjp/sapasa?node-id=424-647&node-type=canvas&t=ALDmbUS532bnPMbz-0&scaling=scale-down&content-scaling=fixed&page-id=414:616",
     wip: false,
-  },
-  {
-    title: "qual res",
-    description: "impact of office design on wellbeing",
-    blurb: "qual research",
-    year: "2023",
-    category: "research",
-    url: "none",
-    wip: false,
+    external: true,
   },
   {
     title: "misc.",
@@ -78,7 +73,8 @@ export const works: WorkListItem[] = [
     blurb: "misc. design / art",
     year: "2018–",
     category: "design",
-    url: "/works/misc",
+    url: "https://mail-attachment.googleusercontent.com/...",
     wip: false,
+    external: true,
   },
 ];

@@ -11,16 +11,16 @@
 - [ ] Update base.scss with more base vars/styling
 - [x] Fix images for deployment
 - [x] Custom domain
+- [x] Open behance links in new tab
 
 ## Design / Frontend
-- [ ] Glass + label card effect
 - [x] Favicon 
 - [x] Hover purple 
 - [x] Retire Inter
 - [ ] Improve mobile-view  
 - [x] Make book png like book 
 - [x] Make song rotating vinyl (and maybe play-able?)
-- [ ] Remove scrollbar
+- [x] Remove scrollbar
 
 ## Bugs / Improvements
 - [x] Fix work redirection; clicking leads to new link in the same tab 

@@ -1,6 +1,5 @@
 ---
 import "../../styles/global.scss";
-import "../../styles/about.scss";
 import "../../styles/notes.scss";
 import { ViewTransitions } from 'astro:transitions';
 ---
@@ -12,25 +11,40 @@ import { ViewTransitions } from 'astro:transitions';
     <meta charset="utf-8">
     <title>Olympal</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
     <link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="copy" id="article">
+    <a href="../../" class="notes-back">← back</a>
     <div class="container">
-        <a href="../../" class="notes-back">← back</a>
         <div class="header" style="text-align: center">
-            Designing for shared sporting experiences in AR
+            Designing for shared sporting experiences 
             <br>
         </div>
         <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0;">
-        <p class="heading">
-            Background
-         </p>
         <p>
-            Traditional broadcasts of the Olympics no longer meet the evolving expectations of an audience that values control, connection, and immersive participation.  
-            To address this, we designed an augmented reality viewing experience that adapts to a user’s unique preferences to replicate the real time atmosphere, energy and shared experiences they create when watching the games in person. 
+            As part of the <a href="https://www.sydney.edu.au/units/DECO2200">Interaction Design Studio</a>, my group team investigated the erratic 
+            ngagement and viewership of the olympic games. Guided by the human centred design process, we dug deep to 
+            understand the 'what', ‘why’ and ‘who' – a crucial step in finding solutions for those impacted by this issue.
         </p>
-        <img src="/images/work/olympal.png"/>
+        <img src="/images/casestudies/olympal/slide1.png"/>
+        <p class="heading">The problem</p>
+        <p>
+            To gain a greater understanding of the problem area, its context and issues, we conducted extensive secondary research across 
+            multiple platforms; academic literature, news outlets, blogs and direct competitor websites. Through this, we discovered an 
+            interesting parado: despite record high viewership for the 2024 Games, there was decreasing global annual reach, both recorded 
+            by the International Olympic Committee. 
+        </p>
+        <p>
+            This led us to our problem scenario, where traditional viewing experiences fail to meet the evolving needs of a digital, 
+            on-demand audience who seek increased interactivity, authentic connection and more personalised experiences 
+        </p>
+        <p class="heading">Primary research</p>
+        <p>
+            To address the gaps in prior research, we used a mixed methods approach with an explanatory sequential design ensuring each 
+            phase was purposeful, informed by prior findings, and contributed to a progressively deeper understanding of the problem.
+        </p>
     </div>
 </body>
 </html>

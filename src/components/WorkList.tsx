@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { works } from "../data/works";
 import { useStore } from "@nanostores/react";
 import { selectedWorks, selectedTag, selectedWorkItem } from "../data/store";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 import "../styles/work-list.scss";
 
 const WorkList = () => {
@@ -88,11 +88,18 @@ const WorkList = () => {
       <hr className="works-hr"></hr>
       <div className="works-list">
         {works.map((work) => {
+          const openInNewTab = ["misc.", "sapasa", "kolam", "olympal"].includes(work.title.toLowerCase());
           return (
-            <a key={work.title} className="work-link" href={work.url} rel="noopener noreferrer">
+            <a
+              key={work.title}
+              className="work-link"
+              href={work.url}
+              target={openInNewTab ? "_blank" : "_self"}
+              rel={openInNewTab ? "noopener noreferrer" : undefined}
+            >
               <div
                 id={work.title}
-                className={`work-item`}
+                className="work-item"
                 data-category={work.category}
                 onMouseEnter={isMobile ? () => {} : () => handleHover(work.title, true)}
                 onMouseLeave={isMobile ? () => {} : () => handleHover(work.title, false)}
