@@ -1,0 +1,192 @@
+---
+import "../../styles/global.scss";
+import "../../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!DOCTYPE html>
+<html class="centered" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lit-box</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="copy" id="article">
+    <a href="../../" class="notes-back">← back</a>
+    <div class="container">
+        <div class="header" style="text-align: center">
+            Adressing the literacy crisis in australia 
+            <br>
+        </div>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0;">
+        <p>
+            Along with Nicole Chen & Hannah Yuan, we tacked the brief “relearn the learning” by focusing on Australia's literacy crisis. 
+            Given the sensitivity of this topic, we followed the double diamond framework to ensure a human-centred approach. 
+        </p>
+        <img src="/images/casestudies/litbox/slide1.png"/>
+        <p class="heading"> Background </p>
+        <p>
+            Our investigation began with a simple question: <i>why?</i> 
+        </p> 
+        <p>
+            Through in depth background research around 8 questions, 
+            we discovered an alarming trend. 1 in 7 Australians have very poor literacy skills with 1 in 3 low enough to make them vulnerable to unemployment 
+            and social exclusion.     
+        </p>
+        <img src="/images/casestudies/litbox/slide2.png"/>
+        <p>
+            Even more concerning, this issue starts young, with 20% of children failing to meet basic reading standards by university.  
+            The Australian Institute of Health and Welfare confirms this, reporting that 22% of children today are starting school less developmentally prepared than ever before. 
+        </p> 
+        <img src="/images/casestudies/litbox/slide3.png"/>
+        <p>
+            These paint a clear picture: literacy issues in older children stem from a challenge in learning foundational skills in early childhood. 
+            These struggles snowball, impacting their ability to learn throughout their lives. Recognizing this, we decided to 
+            nip the problem at its bud by examining literacy issues in early childhood.  
+        </p>
+        <p class="heading"> Primary research </p>
+        <p>
+            While previous research sheds light on key areas, it lacks depth in exploring the interaction between teaching methods, 
+            technology use, and socio-economic factors. To address this, we adopted a mixed methods approach—combining surveys, interviews, 
+            and digital ethnography—to capture both attitudinal and behavioural insights, offering a more comprehensive understanding.
+        </p>
+        <img src="/images/casestudies/litbox/slide5.png"/>
+        <p>
+            We started with a survey to get a broad understanding of parents’ reading habits and challenges. 
+            Thirty parents of kids aged 3–8—a key stage for reading growth shared their experiences.
+            While 80.1% said they actively support their child’s learning, most struggled to find time to build literacy skills. 
+            This gap pointed us toward interviews for deeper insight.
+        </p>
+        <img src="/images/casestudies/litbox/slide6.png"/>
+        <p>
+            To dig deeper into the gaps, we interviewed six parents and educators using semi-structured questions.  
+            They reinforced our findings—parents struggled to balance reading with busy routines, while educators 
+            highlighted literacy as a holistic process involving writing, play, and movement.
+        </p>
+        <img src="/images/casestudies/litbox/slide7.png"/>
+        <p>
+            To avoid potential ethical issues and ensure ecological validity, we conducted a digital ethnography 
+            By comparing three platforms based on honesty, accuracy, and quantity, 
+            we found Reddit and YouTube comments the most valuable, offering a rich mix of expert opinions and personal stories.
+        </p>
+        <img src="/images/casestudies/litbox/slide8.png"/>
+        <p class="heading"> Analysis & synthesis </p>
+        <p>
+            We chose thematic analysis to analyse our research because it allows us to identify recurring patterns and themes 
+            across our surveys, interviews and observations. We discovered over 30 codes which were then grouped into 10 sub themes and derived 6 themes.  
+        </p>
+        <img src="/images/casestudies/litbox/slide9.png"/>
+        <p>
+            These were synthesised into following insights by considering aspects of redundancy and overlaps. We then ranked them by its novelty:  
+        </p>
+        <img src="/images/casestudies/litbox/slide10.png"/>
+        <p>
+            Leading to our problem statement: 
+        </p>
+        <img src="/images/casestudies/litbox/slide4.png"/>
+        <p class="heading"> Visualising Insights </p>
+        <p>
+            To visualise our insights we created a persona of a child; Striving Sammy, who embodies the struggles faced by young learners. 
+            Sammy's experience highlights a disconnect between current literacy programs and a child's need for engaging activities.
+        </p>
+        <img src="/images/casestudies/litbox/slide11.png"/>
+        <p>
+            Frustration arises for both Sammy and her parents at various stages of their learning journey, revealing pain points 
+            before, during, and after literacy support. 
+        </p>
+        <img src="/images/casestudies/litbox/slide12.png"/>
+        <p>
+            The core design problem lies in creating a holistic support system that cultivates joy and self-motivation in young learners, 
+            replacing frustration with a sense of accomplishment and a love for reading. To address these needs, our solution 
+            focuses on fostering collaborative, personalised, and multi-sensory learning environments that bridge accessibility gaps and balance technology integration.
+        </p>
+        <p class="heading"> Concept ideation </p>
+        <p>
+            Adopting our user persona, Sammy, we each came up with 9 ideas using storyboards,emphasising solutions that encompassed digital, 
+            spatial and physical elements. We then voted on the most favourable concepts using a decision matrix to 
+            determine our strongest solution. Our top 3 concepts were: 
+            <li> Cubes- an interactive, digital cube that provides literacy-related prompts for individual and collaborative learning </li>
+            <li>Learning Carpet- an interactive mat with learning activities for children to engage with </li>
+            <li>Reading Pals- an AR digital application that allows children to discover books to read based on their environment </li>
+        </p>
+        <img src="/images/casestudies/litbox/slide13.png"/>
+        <p>
+            We judged these 3 concepts based on our criteria which were derived from our key insights and our problem statement. Our criteria included: 
+        </p>
+        <img src="/images/casestudies/litbox/slide14.png"/>
+        <p>
+            Cubes” scored the highest based on the criteria. However, we still considered other solutions based on their strengths in their multisensory, 
+            engaging and collaborative elements. Merging concepts, we asked ourselves: 
+            <li> How can we foster collaboration, like book-swapping or facilitate conversations like Reading Pals? & </li>  
+            <li> How can we enhance multisensory interactions between the product and children’s environments like Learning Carpet? </li>
+        </p>
+        <p class="heading"> Iterating... </p>
+        <p>
+            Once we established the concept, we used our success matrix and internal feedback as a guide for key iterations. 
+            As such, we were able to achieve 3 main iterations, ranging from low-fidelity sketches to our current mid-fidelity prototype.
+        </p>
+        <img src="/images/casestudies/litbox/slide15.png"/>
+        <p>
+            We began this process with a simple sketch of the cube along with wireframes for the digital interface. 
+            Here, we primarily focused on how the cube would cater to individual usage – incorporating digital drawing and listening activities and 
+            potential features for the other faces of the cube such as puzzles and lava lamps.
+        </p>
+        <img src="/images/casestudies/litbox/slide16.png"/>
+        <p>
+            Comparing our sketch to the success matrix, we found it lacked collaborative elements and included physical features that were largely unfeasible.
+            This led to our first iteration, where we introduced collaborative activities—such as word and image building. 
+        </p>
+        <img src="/images/casestudies/litbox/slide17.png"/>
+        <p>
+            As we presented this at our Studio's design critique, we were advised to investigate further as to how our prototype would achieve the final criteria: 
+            the integration of digital, physical, and spatial elements. This led us to our final iteration where we brought our sketches to reality in 
+            our mid-fidelity prototype, utilising the three aspects to guide us through prototyping and emulate a clear user journey.
+        </p>
+        <img src="/images/casestudies/litbox/slide18.png"/>
+        <p class="heading"> Final prototype features </p>
+        <p>
+            The LitCube includes a spatial element with two settings: home and school. At home, it supports individual literacy through writing, 
+            reading, and speaking prompts. In school, it encourages collaboration—kids build words and images together and can exchange books, 
+            promoting social learning and shared reading experiences.
+        </p>
+        <img src="/images/casestudies/litbox/slide19.png"/>
+        <p>
+            Building on the child’s natural curiosity, LitCube’s physical design encourages exploration through sensory tools like a texture wall, 
+            fidget buttons, and a personal library. These open-ended features promote creative problem-solving and are grounded in 
+            research by Matteson, Taylor, and Statler, showing that sensory materials boost emotional engagement in learning.
+        </p>
+        <img src="/images/casestudies/litbox/slide20.png"/>
+        <p>
+            The final stage introduces a dynamic touchscreen with a microphone, speaker, and stylus—promoting interactive, spatial engagement. 
+            The digital interface has three modes: Speak, Draw, and Move. 
+            <li>Speak supports language development through audio, prompts and voice responses, </li>
+            <li> Draw encourages writing and creativity using the stylus, & </li>
+            <li> Move enables collaboration by syncing nearby cubesallowing children to build words or images together in real time. </li>
+        </p>
+        <img src="/images/casestudies/litbox/slide21.png"/>
+        <p class="heading"> User testing </p>
+        <p>
+            We tested LitCube at the UX Testing Fair using a structured protocol (as outlined below), involving seven participants
+        </p>
+        <img src="/images/casestudies/litbox/slide22.png"/>
+        <p>
+            Through this process, we discovered the following insights:
+            <li> Participants responded positively to the physical features. </li>
+            <li> Some confusion arose around the digital interface, with a need for clearer instructions and icons. </li>
+            <li> The SUS survey yielded a strong average score of 84, highlighting good functionality but noting difficulty using the prototype without guidance. </li>
+            <li> Interviews confirmed the activities were engaging, though unclear instructions affected confidence and ease of use. </li>
+        </p>
+        <img src="/images/casestudies/litbox/slide23.png"/>
+        <p class="heading"> Next steps </p>
+        <p>
+            As we move forward, the next phase for LitCube will focus on refining the design based on expert evaluations and 
+            iterative improvements. A revised testing protocol will guide us through trials with early primary school students, 
+            providing critical insights into its effectiveness. By the end of the month, we aim to finalize a high-fidelity prototype, setting 
+            the stage for the next steps in bringing this educational tool to life.
+        </p>
+    </div>
+</body>
+</html>

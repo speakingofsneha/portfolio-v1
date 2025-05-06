@@ -42,7 +42,7 @@ export const works: WorkListItem[] = [
     blurb: "ux design",
     year: "2023–",
     category: "research design",
-    url: "none",
+    url: "/case-studies/litbox",
     wip: true,
   },
   {
