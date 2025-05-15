@@ -8,7 +8,7 @@ html {
       padding: 3vw;
       max-width: 750px;
     }
-  }
+}
   
   body.copy {
     color: base.$dark-text;
@@ -55,4 +55,72 @@ html {
     &:hover {
       color: rgb(152, 166, 209);
     }
+  }
+
+  //sidebar navigation
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 0;
+  }
+
+  .bar {
+    position: relative;
+    height: 2px;
+    width: 24px;
+    background-color: base.$gray-content;
+    border-radius: 1px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    margin-left: 40px; /* Fixed position from the left */
+  }
+
+  .bar::after {
+    content: attr(data-label);
+    position: absolute;
+    left: 70px;
+    top: -8px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .bar.hovered::after {
+    opacity: 1;
+  }
+
+  .bar.active {
+    background-color: base.$dark-text; /* Only change color, not length */
+    width: 24px; /* Keep same length as default */
+  }
+
+  /* Taper effect */
+  .bar.hovered {
+    width: 60px; /* More dramatic extension */
+    background-color: base.$dark-text;
+  }
+
+  .bar.nearby-1 {
+    width: 45px; /* One level away */
+    background-color: base.$gray-content;
+  }
+
+  .bar.nearby-2 {
+    width: 35px; /* Two levels away */
+    background-color: base.$gray-content;
+  }
+
+  section {
+    height: 100vh;
+    border-bottom: 1px solid #333;
+    padding: 1rem;
   }
