@@ -53,7 +53,7 @@ select {
 }
 
 .name {
-  font-family: "Apercu Pro Regular";
+  font-family: "Inter";
   display: flex;
   justify-content: space-between;
 }
@@ -82,7 +82,7 @@ select {
 }
 
 .gray-link {
-  font-size: 16px;
+  font-size: 15px;
   color: base.$gray-content;
   text-decoration: none;
 
@@ -100,7 +100,7 @@ select {
   display: block;
   font-size: 16px;
   color: #4B4A4A;
-  font-family: "Apercu Pro Regular";
+  font-family: "Inter";
   text-decoration: none;
 
   &:hover {

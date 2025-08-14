@@ -22,15 +22,16 @@ const WorkList = () => {
   }, [$selected]);
 
   function updateTags(category: string) {
-    selectedTag.set(category);
+    const normalized = category.toLowerCase();
+    selectedTag.set(normalized);
     const workItems = document.getElementsByClassName("work-item");
 
-    if (category === "all") {
+    if (normalized === "all") {
       for (const item of workItems) item.className = "work-item";
     } else {
       for (const item of workItems) {
         const categories = item.getAttribute("data-category");
-        item.className = categories!.includes(category)
+        item.className = (categories || "").toLowerCase().includes(normalized)
           ? "work-item"
           : "work-item deselected";
       }
@@ -38,7 +39,7 @@ const WorkList = () => {
 
     const tags = document.getElementsByClassName("tag");
     for (const tag of tags) {
-      tag.className = tag.id === category ? "tag" : "tag deselected";
+      tag.className = tag.id === normalized ? "tag" : "tag deselected";
     }
   }
 
@@ -100,7 +101,7 @@ const WorkList = () => {
               <div
                 id={work.title}
                 className="work-item"
-                data-category={work.category}
+                 data-category={work.category}
                 onMouseEnter={isMobile ? () => {} : () => handleHover(work.title, true)}
                 onMouseLeave={isMobile ? () => {} : () => handleHover(work.title, false)}
               >

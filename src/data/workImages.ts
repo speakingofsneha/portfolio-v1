@@ -7,38 +7,38 @@ interface WorkImageData {
 const workImages: WorkImageData[] = [
   {
     url: "/images/work/datavis.png",
-    id: "data vis",
-    category: "code design"
+    id: "Info-vis",
+    category: "Code Design"
   },
   {
     url: "/images/work/olympal.png",
-    id: "olympal",
-    category: "kdesign",
+    id: "Olympal",
+    category: "Research Design",
   },
   {
     url: "/images/work/anu.png",
-    id: "anu",
-    category: "code design",
+    id: "Anu",
+    category: "Code Design",
   },
   {
     url: "/images/work/litbox.png",
-    id: "lit-box",
-    category: "research design",
+    id: "Lit-box",
+    category: "Research Design",
   },
   {
     url: "/images/work/sapasa.png",
-    id: "sapasa",
-    category: "design",
+    id: "Sapasa",
+    category: "Research Design",
   },
   {
     url: "/images/work/kolam.png",
-    id: "kolam",
-    category: "research",
+    id: "Kolam",
+    category: "Code",
   },
   {
     url: "/images/work/misc.png",
-    id: "misc.",
-    category: "design research",
+    id: "Misc.",
+    category: "Design",
   },
 ];
 

@@ -47,10 +47,10 @@ const WorkTable = () => {
         {images.map((imageData, index) => {
           // 🙏 forgive me
           if (
-            ($tag === "all" ||
-              ($tag !== "all" && imageData.category.includes($tag))) &&
+            ($tag.toLowerCase() === "all" ||
+              ($tag.toLowerCase() !== "all" && imageData.category.toLowerCase().includes($tag.toLowerCase()))) &&
             ($workItem === "none" ||
-              ($workItem !== "none" && imageData.id == $workItem))
+              ($workItem !== "none" && imageData.id === $workItem))
           ) {
             return (
               <motion.div

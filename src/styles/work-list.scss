@@ -11,17 +11,18 @@
 }
 
 .works-hr {
+  margin-top: 15px;
   border: 0.5px solid base.$gray-content;
+  opacity: 0.5;
   margin-bottom: 20px;
 }
 
 .tags > p {
-  font-family: "Apercu Pro Regular", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.tag {
-  cursor: pointer;
-}
+.tag { cursor: pointer; }
+.tag.deselected { opacity: 0.4; }
 
 .work-description {
   display: block;

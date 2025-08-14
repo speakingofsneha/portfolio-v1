@@ -15,16 +15,16 @@ html, body {
 }
   
 .about-image {
-    width: 40%;
+    margin-top: 2%;
+    width: 38%;
     margin-bottom: 2.5%;
 }
   
 .about-p {
     color: #4B4A4A;
-    line-height: 1.5;
-    font-size: 16.5px;
+    font-size: 15.5px;
     text-align: left;
-    width: 80%;
+    line-height: 1.6;
 }
 
 .back-button {
@@ -33,7 +33,7 @@ html, body {
     margin-left: 24%;
     margin-top: 50px;
     width: max-content;      // Shrinks to fit the arrow text
-    font-size: 16px;
+    font-size: 15px;
     color: #4B4A4A;
     text-decoration: none;
   
