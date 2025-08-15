@@ -30,6 +30,7 @@ a {
   overflow-y: scroll;
   scroll-behavior: smooth;
   background-color: white;
+  justify-content: space-between;
 }
 
 .about-container {
@@ -51,9 +52,10 @@ a {
 }
 
 .footer {
-  margin-top: 1em;
+  margin-top: auto;
+  padding-top: 1em;
+  font-size: 12px;
 }
-
 
 @media screen and (max-width: 1024px) {
   .about-blurb {

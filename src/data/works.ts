@@ -52,7 +52,7 @@ export const works: WorkListItem[] = [
     description: "Translating kolams into code in p5js",
     blurb: "creative coding",
     year: "2023",
-    category: "Code",
+    category: "Code Design",
     url: "https://www.behance.net/gallery/223935267/Mornings-in-Chidam-Creative-Coding-in-p5js",
     wip: false,
     external: false,

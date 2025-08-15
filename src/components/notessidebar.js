@@ -1,5 +1,5 @@
 const bars = document.querySelectorAll(".bar");
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("p[id^='section']"); // Look for p elements with IDs starting with 'section'
 const sidebar = document.getElementById("sidebar");
 
 // Track the mouse position relative to the sidebar
@@ -72,12 +72,61 @@ function clearAllHover() {
   });
 }
 
+// Function to find the closest bar to a given Y position
+function findClosestBar(clickY) {
+  let closestBar = null;
+  let closestDistance = Infinity;
+  
+  bars.forEach((bar) => {
+    const rect = bar.getBoundingClientRect();
+    const barCenter = rect.top + rect.height / 2;
+    const distance = Math.abs(clickY - barCenter);
+    
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestBar = bar;
+    }
+  });
+  
+  return closestBar;
+}
+
+// Function to scroll to section with offset
+function scrollToSection(targetId, offset = 30) {
+  const element = document.getElementById(targetId);
+  if (element) {
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - offset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+}
+
+// Add click functionality to individual bars
 bars.forEach((bar) => {
   // Scroll to section on click
   bar.addEventListener("click", () => {
     const targetId = bar.getAttribute("data-target");
-    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+    scrollToSection(targetId, 45);
   });
+});
+
+// Add click functionality to the entire sidebar area
+sidebar.addEventListener("click", (e) => {
+  // If clicking directly on a bar, let the bar's click handler deal with it
+  if (e.target.classList.contains("bar")) {
+    return;
+  }
+  
+  // Otherwise, find the closest bar to the click position
+  const closestBar = findClosestBar(e.clientY);
+  if (closestBar) {
+    const targetId = closestBar.getAttribute("data-target");
+    scrollToSection(targetId, 45);
+  }
 });
 
 // Scrollspy

@@ -60,7 +60,7 @@ html {
     }
   }
 
-  //sidebar navigation
+  // casestudy navigation 
   .sidebar {
     position: fixed;
     top: 0;
@@ -80,9 +80,20 @@ html {
     width: 24px;
     background-color: base.$gray-content;
     border-radius: 1px;
-    transition: width 0.3s ease, background-color 0.3s ease;
+    transition: width 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     margin-left: 40px; /* Fixed position from the left */
+    
+    /* Create a larger click target area */
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      right: -8px;
+      bottom: -8px;
+      z-index: 1;
+    }
   }
 
   .bar::after {
@@ -102,9 +113,9 @@ html {
   }
 
   .bar.active {
-    background-color: base.$dark-text; /* Only change color, not length */
-    width: 24px; /* Keep same length as default */
+    background-color: base.$dark-text; /* Darker color for active state */
   }
+
 
   /* Taper effect */
   .bar.hovered {
