@@ -21,8 +21,14 @@
   font-family: "Inter", sans-serif;
 }
 
-.tag { cursor: pointer; }
-.tag.deselected { opacity: 0.4; }
+.tag { 
+  cursor: pointer; 
+  transition: all 0.3s ease-in-out;
+}
+.tag.deselected { 
+  opacity: 0.4; 
+  transition: opacity 0.3s ease-in-out;
+}
 
 .work-description {
   display: block;
@@ -42,15 +48,22 @@
   grid-template-columns: 1.7fr 5fr 1fr;
   cursor: pointer;
   padding-block: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .work-link:hover {
   text-decoration: none;
 }
 
+.work-item:hover {
+  transform: translateX(4px);
+  transition: transform 0.2s ease-in-out;
+}
+
 .deselected {
   filter: saturate(0);
   opacity: 0.3;
+  transition: all 0.3s ease-in-out;
 }
 
 .label-wrapper {
