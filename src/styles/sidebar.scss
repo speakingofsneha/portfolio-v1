@@ -3,16 +3,16 @@
 div {
   font-weight: 200;
   font-size: 15px;
-  color: #4B4A4A;
+  color: base.$dark-text;
 }
 
 a {
   text-decoration: none;
-  color: #4B4A4A;
+  color: base.$dark-text;
   font-size: 15px;
   
   &:visited {
-    color: #4B4A4A;
+    color: base.$dark-text;
   }
 
   &:hover {
@@ -42,7 +42,7 @@ a {
 .about-blurb {
   width: 70%;
   font-size: 15px;
-  color: #4B4A4A;
+  color: base.$dark-text;
 }
 
 .list {

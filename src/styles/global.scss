@@ -60,7 +60,7 @@ select {
 
 .name-link {
   font-size: 18px;
-  color: #4B4A4A;
+  color: base.$dark-text;
 
   &:hover {
     color: base.$purple-hover;
@@ -99,7 +99,7 @@ select {
 .back-button {
   display: block;
   font-size: 16px;
-  color: #4B4A4A;
+  color: base.$dark-text;
   font-family: "Inter";
   text-decoration: none;
 

@@ -21,7 +21,7 @@ html, body {
 }
   
 .about-p {
-    color: #4B4A4A;
+    color: base.$dark-text;
     font-size: 15.5px;
     text-align: left;
     line-height: 1.6;
@@ -35,7 +35,7 @@ html, body {
     margin-top: 40px;
     width: max-content;      // Shrinks to fit the arrow text
     font-size: 15px;
-    color: #4B4A4A;
+    color: base.$dark-text;
     text-decoration: none;
   
     &:hover {
