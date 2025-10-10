@@ -29,7 +29,7 @@ a {
   //overflow-y: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  background-color: white;
+  background-color: base.$white-bg;
   justify-content: space-between;
 }
 
@@ -43,6 +43,8 @@ a {
   width: 70%;
   font-size: 15px;
   color: base.$dark-text;
+  font-family: "Inter Variable", "Inter", sans-serif;
+  font-weight: 400;
 }
 
 .list {

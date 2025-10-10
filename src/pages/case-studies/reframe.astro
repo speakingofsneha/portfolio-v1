@@ -1,0 +1,119 @@
+---
+import "../../styles/global.scss";
+import "../../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!DOCTYPE html>
+<html class="centered" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Reframe</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="copy" id="article">
+    <div class="container">
+        <div class="page-header">
+            <a href="../../" class="notes-back">← back</a>
+            <span class="header-title">Reframe</span>
+            <span class="header-date">Oct 2025</span>
+        </div>
+        <hr class="header-divider">
+
+        <!-- casestudy navigation -->
+        <div class="sidebar" id="sidebar">
+            <div class="bar" data-target="section1" data-label="The problem"></div>
+            <div class="bar" data-target="section2" data-label="Opportunity"></div>
+            <div class="bar" data-target="section3" data-label="Introducing Reframe"></div>
+            <div class="bar" data-target="section4" data-label="Originality"></div>
+            <div class="bar" data-target="section5" data-label="Ethics"></div>
+            <div class="bar" data-target="section6" data-label="Viability"></div>
+            <div class="bar" data-target="section7" data-label="Epilogue"></div>
+        </div>
+
+        <div class="content"> 
+            <p>
+                This was the concept pitch for a <a href="https://www.sydney.edu.au/units/DECO3000">Designing Intelligent Systems</a> class, inspired by an essay on <a href="https://every.to/source-code/selfish-software">selfish software</a>. 
+                It was embarrasingly cathartic presenting this because because I’m a #1 hater at heart and designing somehing out of deep 
+                frustration somehow always beats designing out of love. Or maybe that's just me. <br><br>
+            </p>
+            <img src="/images/casestudies/reframe/slide1.png"/>
+            <p id="section1" class="heading"> The problem </p>
+            <p>
+                Design education at USYD doesn’t prepare you for real design work, it trains you to follow instructions neatly and obediently. Like most design schools, USYD hands you a template for writing case studies — a predictable recipe of surveys, interviews, 
+                wireframes, and testing, ending in a “polished” mockup that pretends to solve the problem. But real design work isn’t linear; 
+                it’s cyclical, messy, and full of small, thoughtful pivots.
+            </p>
+            <img src="/images/casestudies/reframe/slide2.png"/>
+            <p>
+                And this recipe isn’t unique to USYD. Design graduates across the world are churning out portfolios that look and sound 
+                identical, even when solving completely different problems. Expecting that from bootcamps makes sense, their main 
+                KPI is course-to-job. But when a university produces the same thing, it’s a symptom of how we’re assessed.
+            </p>
+            <img src="/images/casestudies/reframe/slide3.png"/>
+            <p> Our rubrics reward steps, not thinking. Four or five iterations? that’s an hd. Three? Distinction. Depth and insight 
+                rarely matter as much as following the format. So as students, we adapt — we reverse-engineer from an HD and stop 
+                designing for the problem, and start designing for the rubric. Then we graduate and find out this cookie cutter 
+                project lands nowhere because hiring managers have seen the exact thing hundreds of times that week. </p>
+                <img src="/images/casestudies/reframe/slide4.png"/>
+            <p id="section2" class="heading"> Opportunity </p>
+            <p>
+                So I started asking myself: how do I turn all this schoolwork — these long, identical 60-page reports — into something 
+                that actually reflects how I think and design?
+            </p>
+            <p id="section3" class="heading"> Introducing Reframe </p>
+            <p>
+                An intelligent system I’m building to transform raw design artifacts into meaningful case studies that reflect real thinking. All good case studies combine three things: a clear narrative, strong information design, and personality. Re-frame brings all three together seamlessly.
+            </p>
+            <img src="/images/casestudies/reframe/slide5.png"/>
+            <p>
+                Here’s how it works. I can upload project materials, reports, Figma files, notes — and it analyses them to suggest 
+                narrative outlines based on storytelling frameworks used in real portfolios. It tailors these based on your role, 
+                audience, and focus, whether that’s research, prototyping, or interaction design. <br><br>
+                Technically, this would use a fine-tuned open-source LLM like Llama 3, trained on quality UX case studies, academic reflections, and my own 
+                project data. A lightweight multimodal model like Mini-Gemini parses screenshots and Figma exports. The summarisation layer uses 
+                transformer-based clustering to link insights and form story arcs, all processed locally using open APIs.
+            </p>
+            <img src="/images/casestudies/reframe/slide6.png"/>
+            <p>
+                Next comes information design. Re-frame builds layouts that match what hiring managers actually look for, clear hierarchy, scannable headings, and a layout that can be skimmed in a minute or read deeply in twenty. It’s software that obsesses over presentation so you can focus on substance. <br><br>
+                The rendering layer uses React-PDF to generate editable visual decks or export them as pdf for presentations or code to add to your portfolio, astro and tailwind css in this because that is my portfolio’s tech stack. I want the slides to remain editable, but building a full presentation editor might not be feasible. Instead, the model could function as a Figma plugin, separate from the main interface
+            </p>
+            <img src="/images/casestudies/reframe/slide7.png"/>
+            <p>
+                Finally, personality. Instead of just generating text, Re-frame prompts reflection as you write, asking what challenged you, what failed, what you’d change next time. Because your process might look like everyone else’s, but your decisions, pivots, and frustrations are what make your work distinct.
+            </p>
+            <img src="/images/casestudies/reframe/slide8.png"/>
+            <p id="section4" class="heading"> Originality </p>
+            <p>
+                Current AI tools can handle these aspects separately, but they’re fragmented and contextless. You end up explaining your project five times to five different apps. Re-frame connects those dots, understanding your project as one continuous story.
+            </p>
+            <img src="/images/casestudies/reframe/slide9.png"/>
+            <p id="section5" class="heading"> Ethics </p>
+            <p>
+                My biggest concern is authorship. I don’t want an AI that speaks for me. Now, hallucination can’t be fully eliminated, so Re-frame will show exactly which artifact or note each piece of text comes from, so users can trace, verify, and rewrite confidently. <br><br>
+                There’s also the risk of re-standardising what “good” design language sounds like, the same thing I’m critiquing. To avoid that, Re-frame learns your tone and context. You define the audience and purpose upfront, so it writes in your voice, not clichés.
+            </p>
+            <img src="/images/casestudies/reframe/slide10.png"/>
+            <p id="section6" class="heading"> Viability </p>
+            <p>
+                And yes, I know this doesn’t sound particularly “viable”. It could scale beyond design, into any theses, capstones, even legal case studies, but as Paul Graham famously said, “do things that don’t scale.”? Jokes aside, this is software I’m building for myself, because narrowing the problem keeps it meaningful, feasible within my constraints, and realistically usable over the next few years.
+            </p>
+            <img src="/images/casestudies/reframe/slide11.png"/>
+            <p id="section7" class="heading"> Epilogue </p>
+            <p>
+                Ultimately, the goal isn’t to automate how I write case studies, it’s to reclaim them from shallow rubrics and formulaic thinking. Because... 
+            </p>
+            <img src="/images/casestudies/reframe/slide12.png"/>
+            <p>
+                Usyd I still ❤️ u promise. Check back in december'25 for the final solution and full case study (and to see if I actually practiced everything I’ve preached here :3)
+            </p>
+        </div>
+ 
+    </div>
+    <script src="../../components/notessidebar.js"></script>
+</body>
+</html>

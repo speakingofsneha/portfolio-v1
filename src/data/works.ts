@@ -11,8 +11,17 @@ interface WorkListItem {
 
 export const works: WorkListItem[] = [
   {
+    title: "Reframe",
+    description: "Turning messy design work into meaning",
+    blurb: "ixd & ai",
+    year: "2025",
+    category: "Design Code",
+    url: "/case-studies/reframe",
+    wip: true,
+  },
+  {
     title: "Info-vis",
-    description: "Equitable indoor environments",
+    description: "Designing for equitable indoor environments",
     blurb: "info vis",
     year: "2025",
     category: "Research Design Code",

@@ -1,0 +1,70 @@
+---
+import "../../styles/global.scss";
+import "../../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!DOCTYPE html>
+<html class="centered" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Olympal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="copy" id="article">
+    <a href="../../" class="notes-back">← back</a>
+    <div class="container">
+        <div class="header" style="text-align: center">
+            Translating kolam into code
+            <br>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0; max-width: 500px; margin: auto; margin-bottom: 1em;">
+
+         <!-- casestudy navigation -->
+         <div class="sidebar" id="sidebar">
+            <div class="bar" data-target="section1" data-label="Background"></div>
+            <div class="bar" data-target="section2" data-label="A journey into code"></div>
+            <div class="bar" data-target="section3" data-label="Final design"></div>
+            <div class="bar" data-target="section4" data-label="Epilogue"></div>
+        </div>
+        <div class="content">
+            <p>
+                Pulli Kolam, a South Indian art form, serves as a rich foundation for studying fractals, geometry, and recursive patterns. 
+                By approaching Kolam through code, we not only preserve its intricate logic but also challenge the colonial narratives that 
+                have long dismissed such indigenous knowledge systems as ‘primitive’. 
+            </p>
+            <p class="heading">Background</p>
+            <p>
+                The inspiration behind the piece ties back to my hometown, a small rural village in southern India and the 
+                summers I spent there as a child. I vividly remember waking up at the crack of dawn to watch my aunt draw beautiful, 
+                intricate patterns on red oxide tiles using rice flour in a coconut shell.
+            </p>
+            <img src="/images/casestudies/kolam/slide1.png"/>
+            <p>
+                The process of creating one almost always involves a specific set of rules/algorithms; as the size and 
+                intricacy of kolams increase, so does its computational complexity. Interestingly, the women who draw these are 
+                not thinking in terms of mathematical theories when making them- they start out small & then expand by enlarging 
+                the same sub-pattern.
+            </p>
+            <p class="heading">A journey into code</p>
+            <p>
+                A good way to understand Kolams is to look at the shapes that make them up. This is based on how a completed 
+                Kolam looks and how it can be represented visually using tiles. There are six basic Kolam “tile” types. Each tile 
+                is a square rotated 45 degrees (so it looks like a diamond), with curved or pointed edges in different patterns. 
+                A red dot is placed in the center of each tile:
+            </p>
+            <img src="/images/casestudies/kolam/slide2.png"/>
+            <p>
+                To describe the edges of these shapes, we can use a simple code:
+                <ul>A curved edge is marked as 1</ul>
+                <ul>A pointed edge is marked as 0</ul>
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
+  font-weight: 400;
 }
 
 .works-hr {
@@ -15,10 +16,6 @@
   border: 0.5px solid base.$gray-content;
   opacity: 0.5;
   margin-bottom: 20px;
-}
-
-.tags > p {
-  font-family: "Inter", sans-serif;
 }
 
 .tag { 
@@ -36,6 +33,7 @@
 
 .work-blurb {
   display: none;
+  font-weight: 400;
 }
 
 .works-list {
@@ -49,6 +47,7 @@
   cursor: pointer;
   padding-block: 2px;
   transition: all 0.3s ease-in-out;
+  font-weight: 400;
 }
 
 .work-link:hover {
@@ -62,7 +61,7 @@
 
 .deselected {
   filter: saturate(0);
-  opacity: 0.3;
+  opacity: 0.2;
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,6 +81,11 @@
 
 .wip-text {
   color: base.$orange-text;
+  font-weight: 400;
+}
+
+.work-year {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1366px) {

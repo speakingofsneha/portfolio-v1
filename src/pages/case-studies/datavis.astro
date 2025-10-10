@@ -15,28 +15,26 @@ import { ViewTransitions } from 'astro:transitions';
 </head>
 
 <body class="copy" id="article">
-    <a href="../../" class="notes-back">← back</a>
     <div class="container">
-        <div class="header" style="text-align: center">
-            Equitable indoor environments
-            <br>
+        <div class="page-header">
+            <a href="../../" class="notes-back">← back</a>
+            <span class="header-title">Atmos</span>
+            <span class="header-date">June 2025</span>
         </div>
-        <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0;">
+        <hr class="header-divider">
 
         <!-- casestudy navigation -->
         <div class="sidebar" id="sidebar">
-            <div class="bar" data-target="section1" data-label="Background"></div>
             <div class="bar" data-target="section2" data-label="The problem"></div>
-            <div class="bar" data-target="section3" data-label="Brief"></div>
-            <div class="bar" data-target="section4" data-label="Concept walkthrough"></div>
-            <div class="bar" data-target="section5" data-label="Understanding Averages"></div>
-            <div class="bar" data-target="section6" data-label="Thermal comfort"></div>
-            <div class="bar" data-target="section7" data-label="Air quality"></div>
+            <div class="bar" data-target="section3" data-label="Opportunity"></div>
+            <div class="bar" data-target="section4" data-label="Conceptualising"></div>
+            <div class="bar" data-target="section6" data-label="Test plan"></div>
+            <div class="bar" data-target="section5" data-label="Prototyping"></div>
+            <div class="bar" data-target="section6" data-label="Testing"></div>
             <div class="bar" data-target="section8" data-label="Epilogue"></div>
         </div>
 
         <div class="content"> 
-            <p  id="section1" class="heading" style="margin-top:-0.2em;"> Background </p>
             <p>
                 We like to think of office buildings as neutral spaces- but comfort and safety, like everything else, are not equally distributed. 
                 From crash test dummies modeled soley after men to algorithms that reinforce 
@@ -55,16 +53,12 @@ import { ViewTransitions } from 'astro:transitions';
                 does not exist. Yet, buildings are cooled, heated, and ventilated as if they do. 
             </p>
             <p> So, how can we better represent and design for an entire population? </p>
-            <p id="section3" class="heading"> Brief </p>
+            <p id="section3" class="heading"> Opportunity </p>
             <p>
                 In collaboration with the Indoor Environmental Quality (IEQ) Lab here at the University of Sydney, I’ll be analysing a year’s worth of data 
                 collected from a real office building with the goal to develop software that empowers building managers to create fairer, more comfortable indoor environments for all.
             </p>
-            <img src="/images/casestudies/datavis/slide3.png"/>
-            <p>
-                I approached the analysis in three phases to ensure insights were grounded in real world readings. 
-                After some intense data wrangling with pandas, I used Plotly.js to build the charts you’ll see next in the wireframes :)
-            </p>
+           <!-- <img src="/images/casestudies/datavis/slide3.png"/> -->
             <p id="section4" class="heading"> Concept walkthrough </p>
             <p>
                 In the application, users can explore any period of time they want, compare it to previous periods, and customize operating hours 
@@ -129,6 +123,7 @@ import { ViewTransitions } from 'astro:transitions';
                 in June '25 for the final solution and full case study to see how I fare :’)
             </p>
         </div>
+ 
     </div>
     <script src="../../components/notessidebar.js"></script>
 </body>

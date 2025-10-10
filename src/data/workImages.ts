@@ -6,6 +6,11 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
+    url: "/images/work/reframe.png",
+    id: "Reframe",
+    category: "Design Code"
+  },
+  {
     url: "/images/work/datavis.png",
     id: "Info-vis",
     category: "Code Design"

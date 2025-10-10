@@ -63,12 +63,52 @@ function updateHoverEffects() {
     if (bars[hoveredIndex + 2]) {
       bars[hoveredIndex + 2].classList.add("nearby-2");
     }
+
+    // Add third level nearby effect
+    if (bars[hoveredIndex - 3]) {
+      bars[hoveredIndex - 3].classList.add("nearby-3");
+    }
+    if (bars[hoveredIndex + 3]) {
+      bars[hoveredIndex + 3].classList.add("nearby-3");
+    }
+
+    // Add fourth level nearby effect
+    if (bars[hoveredIndex - 4]) {
+      bars[hoveredIndex - 4].classList.add("nearby-4");
+    }
+    if (bars[hoveredIndex + 4]) {
+      bars[hoveredIndex + 4].classList.add("nearby-4");
+    }
+
+    // Add fifth level nearby effect
+    if (bars[hoveredIndex - 5]) {
+      bars[hoveredIndex - 5].classList.add("nearby-5");
+    }
+    if (bars[hoveredIndex + 5]) {
+      bars[hoveredIndex + 5].classList.add("nearby-5");
+    }
+
+    // Add sixth level nearby effect
+    if (bars[hoveredIndex - 6]) {
+      bars[hoveredIndex - 6].classList.add("nearby-6");
+    }
+    if (bars[hoveredIndex + 6]) {
+      bars[hoveredIndex + 6].classList.add("nearby-6");
+    }
   }
 }
 
 function clearAllHover() {
   bars.forEach(bar => {
-    bar.classList.remove("hovered", "nearby-1", "nearby-2");
+    bar.classList.remove(
+      "hovered",
+      "nearby-1",
+      "nearby-2",
+      "nearby-3",
+      "nearby-4",
+      "nearby-5",
+      "nearby-6"
+    );
   });
 }
 
