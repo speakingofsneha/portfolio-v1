@@ -18,6 +18,7 @@
 - [ ] Custom cursor/ cursor trail 
 - [x] Hover purple 
 - [x] Retire Apercu
+- [ ] Dark mode? 
 - [ ] Improve mobile-view  
 - [x] Make song rotating vinyl (and maybe play-able?)
 - [x] Remove scrollbar
