@@ -32,6 +32,7 @@
 - [x] Fix font size on landscape / standardize (especially in article view)
 - [ ] Fix footer on iPad / tablet devices
 - [x] Anchor footer to be bottom of screen on large devices
+- [ ] Images take sooooo long to load 
 
 ## Documentation
 - [ ] Finish README

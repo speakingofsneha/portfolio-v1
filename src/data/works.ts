@@ -34,7 +34,7 @@ export const works: WorkListItem[] = [
     blurb: "interaction desn",
     year: "2024",
     category: "Research Design",
-    url: "https://www.behance.net/gallery/223473325/Olympal-Shared-sporting-experience-in-AR",
+    url: "/case-studies/olympal",
     wip: false,
     external: true,
   },

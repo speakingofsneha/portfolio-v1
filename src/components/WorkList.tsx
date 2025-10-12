@@ -89,7 +89,7 @@ const WorkList = () => {
       <hr className="works-hr"></hr>
       <div className="works-list">
         {works.map((work) => {
-          const openInNewTab = ["misc.", "sapasa", "kolam", "olympal"].includes(work.title.toLowerCase());
+          const openInNewTab = ["misc.", "sapasa", "kolam",].includes(work.title.toLowerCase());
           return (
             <a
               key={work.title}

@@ -16,55 +16,51 @@ import { ViewTransitions } from 'astro:transitions';
 </head>
 
 <body class="copy" id="article">
-    <a href="../../" class="notes-back">← back</a>
     <div class="container">
-        <div class="header" style="text-align: center">
-            Designing for shared sporting experiences 
-            <br>
+        <div class="page-header">
+            <a href="../../" class="notes-back">← back</a>
+            <span class="header-title">Olympal</span>
+            <span class="header-date">Nov 2024</span>
         </div>
-        <hr style="border: none; border-top: 1px solid #ddd; margin: 1em 0; max-width: 650px; margin: auto; margin-bottom: 1em;">
+        <hr class="header-divider">
 
          <!-- casestudy navigation -->
          <div class="sidebar" id="sidebar">
-            <div class="bar" data-target="section1" data-label="Background"></div>
-            <div class="bar" data-target="section2" data-label="A space to juggle"></div>
-            <div class="bar" data-target="section3" data-label="The problem"></div>
-            <div class="bar" data-target="section4" data-label="Insights to action"></div>
-            <div class="bar" data-target="section6" data-label="Meet olympal"></div>
-            <div class="bar" data-target="section5" data-label="Concept exploration"></div>
-            <div class="bar" data-target="section6" data-label="Testing"></div>
-            <div class="bar" data-target="section8" data-label="Bringing olympal to life"></div>
-            <div class="bar" data-target="section9" data-label="Hueristic evaluation from experts"></div>
-            <div class="bar" data-target="section10" data-label="Final design"></div>
-            <div class="bar" data-target="section11" data-label="Epilogue"></div>
+            <div class="bar" data-target="slide1" data-label="Background"></div>   
+            <div class="bar" data-target="slide3" data-label="Setting the scene"></div>   
+            <div class="bar" data-target="slide5" data-label="Concept exploration"></div>
+            <div class="bar" data-target="slide7" data-label="Final design"></div>
+            <div class="bar" data-target="section5" data-label="Epilogue"></div>
         </div>
         <div class="content">
+        <p>
+            Final design project as part of the <a href="https://www.sydney.edu.au/units/DECO2200">Interaction Design Studio</a> with Alyssa Bui and Eusra mohammad :)
+        </p>
         </div>
+        <img id="slide1" src="/images/casestudies/olympal/slide1.png"/>
+        <img src="/images/casestudies/olympal/slide2.png"/>
+
+        <img id="slide3" src="/images/casestudies/olympal/slide3.png"/>
+        <img src="/images/casestudies/olympal/slide4.png"/>
+
+        <img id="slide5" src="/images/casestudies/olympal/slide5.png"/>
+        <img src="/images/casestudies/olympal/slide6.png"/>
+
+        <img id="slide7" src="/images/casestudies/olympal/slide7.png"/>
+        <img src="/images/casestudies/olympal/slide8.png"/>
+        <img src="/images/casestudies/olympal/slide9.png"/>
+        <img src="/images/casestudies/olympal/slide10.png"/>
+        <img src="/images/casestudies/olympal/slide11.png"/>
+
+        <p id="section5" class="heading"> Epilogue </p>
         <p>
-            As part of the <a href="https://www.sydney.edu.au/units/DECO2200">Interaction Design Studio</a>, my group team investigated the erratic 
-            ngagement and viewership of the olympic games. Guided by the human centred design process, we dug deep to 
-            understand the 'what', ‘why’ and ‘who' – a crucial step in finding solutions for those impacted by this issue.
-        </p>
-        <p class="heading">Background</p>
-        <p>
-            To gain a greater understanding of the problem area, its context and issues, we conducted extensive secondary research across 
-            multiple platforms; academic literature, news outlets, blogs and direct competitor websites. Through this, we discovered an 
-            interesting parado: despite record high viewership for the 2024 Games, there was decreasing global annual reach, both recorded 
-            by the International Olympic Committee. 
-        </p>
-        <p class="heading">The problem</p>
-        <p>
-            This led us to our problem scenario, where traditional viewing experiences fail to meet the evolving needs of a digital, 
-            on-demand audience who seek increased interactivity, authentic connection and more personalised experiences 
-        </p>
-        <p class="heading">Opportunity</p>
-        <p class="heading">Primary research</p>
-        <p>
-            To address the gaps in prior research, we used a mixed methods approach with an explanatory sequential design ensuring each 
-            phase was purposeful, informed by prior findings, and contributed to a progressively deeper understanding of the problem.
-        </p>
-            
+            Working on Olympal pushed us to think beyond screens and consider how digital experiences can feel more immersive, social, and intuitive. 
+            Balancing ambition with usability was a constant challenge, but through testing and iteration, we created something 
+            that feels both innovative and human. The case study focused more on the AR prototype, as that was the role I took, 
+            but you can view the desktop prototype here.
+        </p> 
         </div>
     </div>
+    <script src="../../components/notessidebar.js"></script>
 </body>
 </html>
