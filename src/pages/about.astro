@@ -2,19 +2,21 @@
 import "../styles/global.scss";
 import "../styles/about.scss";
 import { ViewTransitions } from 'astro:transitions';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.png`}/>
     <ViewTransitions />
   </head>
   <body>
     <a class="back-button" href="../">← back</a>
     <div class="about-content">
-        <img class="about-image" src="/images/aboutme.png"/>
+        <img class="about-image" src={`${baseUrl}images/aboutme.png`}/>
          <div class="about-p" style={{ maxWidth: "540px" }}>
             <span>
                 Hello, I'm Sneha! I’m currently pursuing a BDes/Adv in Interaction Design and Psychological Science at the University of Sydney. 

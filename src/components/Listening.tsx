@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../utils/assetPath";
 import "../styles/currently.scss";
 
 function getCurrentDateTimeCaption() {
@@ -10,7 +11,7 @@ function getCurrentDateTimeCaption() {
 }
 
 const TRACK = {
-  image: "/images/petercat.jpg",
+  image: getAssetPath("/images/petercat.jpg"),
   // Updated link
   link: "https://open.spotify.com/track/5JInU1luIwpnMRU2DDollP?nd=1&dlsi=f6ad4a712ec04f6f",
 };
@@ -21,7 +22,7 @@ const ListeningTo = () => {
   };
 
   return (
-    <div>
+    <div style={{ '--petercat-image': `url(${TRACK.image})` } as React.CSSProperties}>
       <span className="currently-header" style={{ fontWeight: 400 }}>Listening to</span>
       <div id="album" onClick={handleClick} role="link" tabIndex={0}>
         <div id="cover"></div>

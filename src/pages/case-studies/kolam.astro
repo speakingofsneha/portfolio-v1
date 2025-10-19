@@ -2,6 +2,8 @@
 import "../../styles/global.scss";
 import "../../styles/notes.scss";
 import { ViewTransitions } from 'astro:transitions';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -43,7 +45,7 @@ import { ViewTransitions } from 'astro:transitions';
                 summers I spent there as a child. I vividly remember waking up at the crack of dawn to watch my aunt draw beautiful, 
                 intricate patterns on red oxide tiles using rice flour in a coconut shell.
             </p>
-            <img src="/images/casestudies/kolam/slide1.png"/>
+            <img src={`${baseUrl}images/casestudies/kolam/slide1.png`}/>
             <p>
                 The process of creating one almost always involves a specific set of rules/algorithms; as the size and 
                 intricacy of kolams increase, so does its computational complexity. Interestingly, the women who draw these are 
@@ -57,7 +59,7 @@ import { ViewTransitions } from 'astro:transitions';
                 is a square rotated 45 degrees (so it looks like a diamond), with curved or pointed edges in different patterns. 
                 A red dot is placed in the center of each tile:
             </p>
-            <img src="/images/casestudies/kolam/slide2.png"/>
+            <img src={`${baseUrl}images/casestudies/kolam/slide2.png`}/>
             <p>
                 To describe the edges of these shapes, we can use a simple code:
                 <ul>A curved edge is marked as 1</ul>

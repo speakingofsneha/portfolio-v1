@@ -1,4 +1,4 @@
-# sne.design
+# portfolio
 
-  Portfolio / personal site for 2025
+  my personal site for 2024/25
 

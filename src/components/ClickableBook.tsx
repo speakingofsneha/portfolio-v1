@@ -1,5 +1,6 @@
 // src/components/ClickableBook.tsx
 import React from "react";
+import { getAssetPath } from "../utils/assetPath";
 import "../styles/currently.scss";
 
 const ClickableBook: React.FC = () => {
@@ -14,7 +15,7 @@ const ClickableBook: React.FC = () => {
     <div className="book-container">
       <div className="book" onClick={handleClick} role="link" tabIndex={0}>
         <div className="book-cover">
-          <img src="/images/book.jpg" alt="When Breath Becomes Air" />
+          <img src={getAssetPath("/images/book.jpg")} alt="When Breath Becomes Air" />
         </div>
         <div className="book-pages"></div>
         <div className="book-back"></div>
